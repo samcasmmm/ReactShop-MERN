@@ -1,7 +1,11 @@
 import React from 'react';
 
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <>
+      <section className='home-wrapper-1'></section>
+    </>
+  );
 };
 
 export default Home;

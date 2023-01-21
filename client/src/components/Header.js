@@ -1,6 +1,7 @@
 import React from 'react';
 import { BsSearch } from 'react-icons/bs';
 import { Link, NavLink } from 'react-router-dom';
+const Categories = [];
 const Header = () => {
   return (
     <>
@@ -94,8 +95,47 @@ const Header = () => {
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
-              <div className="menu-bottom d-flex align-items-center">
-                <div className=""></div>
+              <div className="menu-bottom d-flex align-items-center gap-30">
+                <div className="">
+                  <div className="dropdown">
+                    <button
+                      className="btn btn-secondary dropdown-toggle bg-transparent border-0 gap-15 d-flex align-items-center"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <img src="images/menu.svg" alt="menu-icon" />
+                      <span className="me-5 d-inline-block">Categories</span>
+                    </button>
+                    <ul className="dropdown-menu border-0">
+                      <li>
+                        <Link className="dropdown-item text-white">
+                          Clothing
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="" className="dropdown-item text-white">
+                          Kitchen
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="" className="dropdown-item text-white">
+                          Beauty & Health
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="" className="dropdown-item text-white">
+                          Stationary
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="" className="dropdown-item text-white">
+                          Sports & Fitness
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
                 <div className="menu-links">
                   <div className="d-flex align-items-center gap-15">
                     <NavLink to="/">Home</NavLink>
